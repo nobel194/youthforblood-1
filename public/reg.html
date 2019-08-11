@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
+    <!-- CUST CSS -->
+    <link rel="stylesheet" type="text/css"  href="./css/style.css">
+    <title>YOUTH FOR BLOOD</title>
+  </head>
+  <body>
+    
+        <nav class="main-navigation">
+            <div class="navbar-header animated fadeInUp">
+                <a class="navbar-brand" href="index.html">YOUTH FOR BLOOD</a>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-list-item">
+                    <a  href="index.html" class="nav-link ">Home</a>
+                </li>
+                <li class="nav-list-item">
+                    <a  href="reg.html" class="nav-link">Donor Registration</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="dons_nearby.html" class="nav-link">Donors Nearby</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="events.html" class="nav-link">Events</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </li>
+            </ul>
+    
+        </nav>
+      
+
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Become a  Donor</h4>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                              <form action='/' method="POST" enctype="multipart/form-data">
+                                  <div class="form-group row">
+                                    <label for="name" class="col-4 col-form-label">Name</label> 
+                                    <div class="col-8">
+                                      <input id="name" name="name" placeholder="Name" class="form-control here" required="required" type="text">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="email" class="col-4 col-form-label">Email*</label> 
+                                    <div class="col-8">
+                                      <input id="email" name="email" placeholder="Email" required="required" class="form-control here" type="email">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="gender" class="col-4 col-form-label">Gender</label> 
+                                    <div class="col-8">
+                                      <input type="radio" name="gender" value="male"> Male
+                                      <input type="radio" name="gender" value="female"> Female
+                                      <input type="radio" name="gender" value="other"> Other
+                                    </div>
+                                  </div>
+
+                                  
+
+                                  <div class="form-group row">
+                                    <label for="bloodgroup" class="col-4 col-form-label">Blood Group</label> 
+                                    <div class="col-8">
+                                      <select id="role" name="bloodgroup" class="custom-select">
+                                        <option value="">Select Blood</option>
+                                        <option value="A+">A+</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B-">B-</option>
+                                        <option value="O+">O+</option>
+                                        <option value="O-">O-</option>
+                                        <option value="AB+">AB+</option>
+                                        <option value="AB-">AB-</option>                                                                                                						
+                                     </select>
+                                    </div>
+                                  </div> 
+
+
+                                  
+
+                                  <div class="form-group row">
+                                    <label for="bodyweight" class="col-4 col-form-label">Body Weight(kg)</label> 
+                                    <div class="col-8">
+                                      <input id="bodyweight" name="bodyweight" placeholder="Body Weight in kg" class="form-control here" type="number">
+                                    </div>
+                                  </div>
+
+                                  <div class="form-group row">
+                                    <label for="age" class="col-4 col-form-label">Age</label> 
+                                    <div class="col-8">
+                                      <input id="age" name="age" placeholder="Age" class="form-control here" type="number">
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="form-group row">
+                                    <label for="Address" class="col-4 col-form-label">Address</label> 
+                                    <div class="col-8">
+                                      <input id="address" name="address" placeholder="Address" class="form-control here" type="text">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="contactnumber" class="col-4 col-form-label">Contact Number</label> 
+                                    <div class="col-8">
+                                      <input id="contactno" name="contactno" placeholder="Contact Number" class="form-control here" type="number">
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="form-group row" class="col-4 col-form-label" class="col-4 col-form-label">
+                                  <input  type="file" name="avatar" />
+                                </div>
+                                  
+                                  <div class="form-group row">
+                                    <div class="offset-4 col-8">
+                                      <button name="submit" type="submit" class="btn btn-danger">Register Now</button>
+                                    </div>
+                                  </div>
+                                </form>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+
+
+ <!--Bottom Footer-->
+ <div class="bottom section-padding">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12 text-center">
+              <div class="copyright">
+                  <p>© <span>2019</span> <a href="index.html" class="transition">YOUTH FOR BLOOD</a> All rights reserved.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--Bottom Footer-->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="./bootstrap-4.3.1-dist/js/main.js"></script>
+</body>
+</html>

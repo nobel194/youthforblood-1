@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
+    <!-- CUST CSS -->
+    <link rel="stylesheet" type="text/css"  href="./css/style.css">
+    <title>YOUTH FOR BLOOD</title>
+  </head>
+  <body>
+      
+
+
+        <a href="/event" class="btn btn-primary">Add Event</a>
+                    Total No. of Event : {{count}}
+
+        <div class="container-fluid">
+            
+                    <h1>NEPAL RED CROSS BLOOD DONATION CAMPAIGN</h1> 
+            <div class="row">
+              <div class="col-xs-12 ">
+                  <table class="table table-stripped table-bordered cf">
+                      <tr>
+                          
+                      <th>Organizer</th>
+                      <th>Place</th>
+                      <th>Date</th>
+                      <th>Approve Status</th>
+                    </tr>
+                    {{#each events}}
+                    <tr>
+                        <td>{{organizer}}</td>
+                        <td>{{place}}</td>
+                        <td>{{date}}</td>
+                        <td><a href="/event/{{_id}}" class="btn btn-success">Approve</a></td>
+                    </tr>
+                    {{/each}}
+                  </table>
+      </div>
+    </div>
+</div>
+
+
+ <!--Bottom Footer-->
+ <div class="bottom section-padding fixed-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="copyright">
+                    <p>© <span>2019</span> <a href="index.html" class="transition">YOUTH FOR BLOOD</a> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Bottom Footer-->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="../public/bootstrap-4.3.1-dist/js/main.js"></script>
+</body>
+</html>
